@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #22c55e;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-2xl font-semibold shadow;
+  background: var(--brand);
+  color: #08121c;
+}
+
+.card {
+  @apply bg-slate-900/70 border border-slate-800 rounded-2xl p-6 shadow-lg;
+}
