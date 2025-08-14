@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: starwincasino-backend
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
+    envVars:
+      - key: CORS_ORIGIN
+        value: "*"
